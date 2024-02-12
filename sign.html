@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>SignUp</title>
+    <style>
+        *{
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        .main1{
+            height: 100vh;
+            width: 100vw;
+            background-image: url('homo.jpg');
+            background-size: 100% 100%;
+            background-position: center;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
+        form{
+            height: 500px;
+            width: 400px;
+            border: 10px ridge #fff;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            border-top-left-radius: 40px;
+            border-bottom-right-radius: 40px;
+            background-color: #00000045;
+            backdrop-filter: blur(10px);
+            filter: blur(.1px);
+            box-shadow: 0px 0px 20px #000,
+            0px 0px 20px #000 inset;
+        }
+        h1{
+            margin: 20px;
+            color: #fff;
+        }
+        .main2{
+            height: 60%;
+            width: 90%;
+            display: flex;
+            flex-direction: column;
+        }
+        .main2 label{
+            font-size: 24px;
+            margin-top: 10px;
+            margin-left: 5px;
+            color: #fff;
+        }
+        .main1 input[type=text],input[type=password],input[type=number]{
+            height: 50px;
+            border: 2px solid;
+            width: 100%;
+            border-radius: 15px;
+            padding-left: 10px;
+            background-color: transparent;
+            color: #fff;
+        }
+        .main2 input:focus{
+            outline: none;
+        }
+        ::placeholder{
+            color:#fff;
+        }
+        #button{
+            height: 30px;
+            width: 90%;
+            font-size: 20px;
+            background-color: rgb(247, 69, 134);
+            border: 2px solid #fff;
+            margin: 20px;
+            font-weight:bold;
+            color: #fff;
+            border-radius: 20px;
+        }
+        .main3{
+            height: 10%;
+            width: 90%;
+            display: flex;
+            flex-direction: row;
+            align-items: center;
+            justify-content: center;
+            margin-top: 10px;
+        }
+        a{
+            color: #fff;
+            margin-left: 5px;
+        }
+        #button:hover{
+            cursor: pointer;
+        }
+        @media (max-width:450px) {
+            form{
+                width: 90vw;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="main1">
+        <form action="">
+            <center><h1>Sign Up</h1></center>   
+            <div class="main2">
+                <label>Enter First Name</label>
+                <input type="text" placeholder="Enter your First Name" required>
+                <label>Enter Last Name</label>
+                <input type="text" placeholder="Enter your Last Name" required>
+                <label>Enter Phone Number</label>
+                <input type="number" name="" id="" placeholder="Enter your Phone Number" required>
+                <label>Password</label>
+                <input type="password" placeholder="Enter your Password" required>
+                <input id="button" type="submit" value="SignUp">
+            </div>
+            <div class="main3">
+                <p style="color: #fff;">Already have an account?</p><a class="anc" href="file:///C:/Users/mohda/Desktop/ayan%20project/ayan.html">Login</a></p>
+            </div>
+        </form>
+    </div>
+</body>
+</html>

@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        *{
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        .main1{
+            height: 100vh;
+            width: 100vw;
+            background-image: url('homo.jpg');
+            background-size: 100% 100%;
+            background-position: center;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+        }
+        form{
+            height: 600px;
+            width: 400px;
+            border: 10px ridge #fff;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            border-top-left-radius: 40px;
+            border-bottom-right-radius: 40px;
+            background-color: #00000045;
+            backdrop-filter: blur(10px);
+            filter: blur(.1px);
+            box-shadow: 0px 0px 20px #000,
+            0px 0px 20px #000 inset;
+        }
+        h1{
+            margin: 20px;
+            color: white;
+        }
+        .main2{
+            height: 60%;
+            width: 90%;
+            display: flex;
+            flex-direction: column;
+        }
+        .m1 label{
+            font-size: 24px;
+            margin-top: 10px;
+            margin-left: 5px;
+            color: white;
+        }
+        .m2 label{
+            font-size: 24px;
+            margin-top: 10px;
+            margin-left: 5px;
+            color: white;
+        }
+        .main2 input[type=text],input[type=number]{
+            height: 27px;
+            border: 2px solid;
+            width: 100%;
+            border-radius: 15px;
+            padding-left: 10px;
+            background-color: transparent;
+            color: #fff;
+        }
+        .main2 input:focus{
+            outline: none;
+        }
+        ::placeholder{
+            color:#fff;
+        }
+        #button{
+            height: 30px;
+            width: 90%;
+            font-size: 20px;
+            background-color: rgb(247, 69, 134);
+            border: 2px solid #fff;
+            margin: 20px;
+            font-weight:bold;
+            color: white;
+            border-radius: 20px;
+        }
+        #button:hover{
+            cursor: pointer;
+        }
+        @media (max-width:450px) {
+            form{
+                width: 90vw;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="main1">
+        <form action="">
+            <center><h1>Add Shipping Address</h1></center>   
+            <div class="main2">
+                <div class="m1">
+                    <label>Enter First Name</label>
+                    <input type="text" placeholder="Enter your First Name" required>
+                    <label>Enter Last Name</label>
+                    <input type="text" placeholder="Enter your Last Name" required>
+                </div>
+                <div class="m2">
+                    <label>Address</label>
+                    <input type="text" required>
+                    <label>State/Province</label>
+                    <input type="text" required>
+                    <label>City</label>
+                    <input type="text" required>
+                    <label>Apartment,suite,etc.</label>
+                    <input type="text" required>
+                    <label>Pin/Postal Code</label>
+                    <input type="number">
+                    <input id="button" type="submit" value="submit">
+                </div>
+            </div>
+        </form>
+    </div>
+</body>
+</html>
